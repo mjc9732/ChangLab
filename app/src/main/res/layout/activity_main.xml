@@ -7,10 +7,39 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="comdrchang.wix.mjc9732.changlab.MainActivity">
+    tools:context="comdrchang.wix.mjc9732.changlab.MainActivity"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHUFFLE"
+        android:id="@+id/shuffle_button"
+        android:layout_marginTop="109dp"
+        android:layout_weight="0.58"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Filter, Distance, zip"
+        android:id="@+id/textView"
+        android:layout_above="@+id/spinner1"
+        android:layout_toLeftOf="@+id/shuffle_button"
+        android:layout_toStartOf="@+id/shuffle_button"
+        android:layout_marginBottom="52dp" />
+
 </RelativeLayout>
